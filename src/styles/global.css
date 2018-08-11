@@ -1,0 +1,9 @@
+/*
+ * This file should be limited to styling that applies to change for core HTML
+ * defaults that couldn't be changed with inline CSS in React components.
+ * Nothing here should be for anything specifically for styling.
+ */
+
+html {
+  margin: 0;
+}
