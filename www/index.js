@@ -1,14 +1,17 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {Header, Paragraph, Screen, Subheader} from 'remiges'
+import {Header, Link, Paragraph, Screen, Subheader} from 'remiges'
 
 const App = () => (
   <Screen>
     <Header>Remiges</Header>
     <Subheader>A React UI Component library</Subheader>
     <Paragraph>
-      Remiges is a React UI Component library built by @angusburg. This is a
-      library created for my projects.
+      Remiges is a React UI Component library built by{' '}
+      <Link to="https://github.com/angusburg" target="_blank">
+        @angusburg
+      </Link>
+      . This is a library created for my projects.
     </Paragraph>
     <Subheader>Why?</Subheader>
     <Paragraph>
