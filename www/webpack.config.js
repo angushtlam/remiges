@@ -1,12 +1,11 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './www/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '..', 'dist', 'www'),
     filename: 'index.js',
-    library: '',
-    libraryTarget: 'commonjs',
   },
   module: {
     rules: [
@@ -22,4 +21,10 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      remiges: path.resolve(__dirname, '..', 'dist', 'lib'),
+    },
+  },
+  plugins: [new HtmlWebpackPlugin({template: './www/index.html'})],
 }
