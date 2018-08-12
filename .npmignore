@@ -1,3 +1,6 @@
 .babelrc
+.prettierrc.yml
+.travis.yml
 lib
 www
+yarn.lock
