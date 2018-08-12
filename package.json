@@ -6,9 +6,10 @@
   "author": "angus <angushtlam@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "npm run build-lib && npm run build-www",
+    "build": "npm run clean && npm run build-lib && npm run build-www",
     "build-lib": "webpack --mode production --config ./lib/webpack.config.js",
     "build-www": "webpack --mode production --config ./www/webpack.config.js",
+    "clean": "rm -rf dist",
     "dev": "start-storybook --port 9001 --config-dir ./lib/.storybook",
     "prepublish": "npm run build-lib",
     "www": "webpack-serve --config ./www/webpack.config.js --open"
@@ -25,10 +26,12 @@
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "prettier": "1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "url-loader": "^1.0.1",
     "webpack": "^4.16.5",
     "webpack-command": "^0.4.1",
     "webpack-serve": "^2.0.2"
