@@ -13,7 +13,7 @@ import {
 const App = () => (
   <Screen>
     <Columns>
-      <Column width={12}>
+      <Column width="12em">
         <Paragraph>
           <Link to="https://github.com/angusburg/remiges" target="_blank">
             Fork me on GitHub!
