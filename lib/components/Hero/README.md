@@ -1,13 +1,14 @@
 # Hero
 Hero is a large banner visual that takes up the significant screen real estate
-with minimal content. Children content is horizontall and vertically centered.
+with minimal content. Children content is horizontally and vertically centered.
+
+> Hero is implemented with the Box component.
 
 ## Component
 > Hero is a Backgroundable component.
 
 | Prop Name  | Required?  | Type       | Description                         | Default |
 | ---------- | ---------- | ---------- | ----------------------------------- | ------- |
-| background | No         | String     | The background of the component.    | `null`  |
 | children   | No         | React.Node | Children to render in the center.   | `null`  |
 | debug      | No         | Boolean    | Enable debug styling                | `false` |
 | height     | No         | String     | The height of the hero              | `100vh` |
