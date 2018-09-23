@@ -31,6 +31,7 @@
     "prettier": "1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "storybook-readme": "^4.0.0-beta1",
     "url-loader": "^1.0.1",
     "webpack": "^4.16.5",
     "webpack-command": "^0.4.1",
