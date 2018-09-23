@@ -3,6 +3,8 @@ Hero is a large banner visual that takes up the significant screen real estate
 with minimal content. Children content is horizontall and vertically centered.
 
 ## Component
+> Hero is a Backgroundable component.
+
 | Prop Name  | Required?  | Type       | Description                         | Default |
 | ---------- | ---------- | ---------- | ----------------------------------- | ------- |
 | background | No         | String     | The background of the component.    | `null`  |
