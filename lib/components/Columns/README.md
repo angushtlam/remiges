@@ -3,21 +3,26 @@ Columns are used to divide content horizontally.
 
 ## Components
 Columns are implemented using two components.
+* Columns - parent component that contains Column components
+* Column - child of a Columns component
 
 ### Columns
-Columns is a parent component that contains Column components.
+| Prop Name | Required?  | Type       | Description                         | Default |
+| --------- | ---------- | ---------- | ----------------------------------- | ------- |
+| children  | No         | React.Node | Column components to render         | `null`  |
+| debug     | No         | Boolean    | Enable debug styling                | `false` |
 
 ### Column
 > Column is a Paddable component.
 
-Column is the child of a Columns component. By default, the width of the column
-is divided evenly with the other sibling columns.
+| Prop Name | Required?  | Type       | Description                                                  | Default |
+| --------- | ---------- | ---------- | ------------------------------------------------------------ | ------- |
+| children  | No         | React.Node | Children to render in Column                                 | `null`  |
+| fixed     | No         | Boolean    | Determines if the column is fixed, akin to `position: fixed` | `false` |
+| width     | No         | String     | The width of the column                                      | `null`  |
 
-| Prop Name | Required?  | Type       | Description                         |
-| --------- | ---------- | ---------- | ----------------------------------- |
-| debug     | No         | Boolean    | Enable debug styling                |
-| fixed     | No         | Boolean    | Determines if the position is fixed |
-| width     | No         | String     | The width of the column             |
+## Default Behaviors
+The width of the column is divided evenly with the other sibling columns.
 
 ## Example
 Basic Columns
