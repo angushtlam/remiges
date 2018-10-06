@@ -8,6 +8,6 @@
         "rootPathPrefix": "~"
       }
     ],
-    "styled-components"
+    "emotion"
   ]
 }
