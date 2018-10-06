@@ -1,6 +1,16 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {Column, Columns, Header, Link, Paragraph, Subheader} from 'remiges'
+import {
+  Column,
+  Columns,
+  Header,
+  Link,
+  Paragraph,
+  Subheader,
+  setupGlobalStyles,
+} from 'remiges'
+
+setupGlobalStyles()
 
 const App = () => (
   <Columns>
