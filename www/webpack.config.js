@@ -24,7 +24,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      remiges: path.resolve(__dirname, '..', 'dist', 'lib'),
+      remiges$: path.resolve(__dirname, '..', 'dist', 'lib', 'index.js'),
     },
   },
   plugins: [new HtmlWebpackPlugin({template: './www/index.html'})],
