@@ -5,7 +5,6 @@ import {
   Column,
   Columns,
   Header,
-  Hero,
   Link,
   Navbar,
   NavbarBrand,
