@@ -22,6 +22,8 @@ Columns are implemented using two components.
 | width     | No         | String     | The width of the column                                      | `null`  |
 
 ## Default Behaviors
+Column widths and fixed columns do not apply in smaller breakpoints.
+
 The width of the column is divided evenly with the other sibling columns.
 
 ## Example
