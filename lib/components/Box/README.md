@@ -8,8 +8,9 @@ all cases of `div` elements.
 | Prop Name          | Required?  | Type       | Description                        | Default |
 | ------------------ | ---------- | ---------- | ---------------------------------- | ------- |
 | children           | No         | React.Node | Children to render in the center   | `null`  |
-| direction          | No         | String     | Flex direction settings            | `null` |
+| direction          | No         | String     | Flex direction settings            | `null`  |
 | horizontallyCenter | No         | Boolean    | Center children horizontally       | `false` |
+| limitedWidth       | No         | Boolean    | Contain component width to 55em    | `false` |
 | verticallyCenter   | No         | Boolean    | Center children vertically         | `false` |
 
 ## Default Behaviors
