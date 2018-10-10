@@ -6,7 +6,7 @@ Image is a wrapper over the HTML `img` element.
 
 | Prop Name  | Required?  | Type       | Description                          | Default |
 | ---------- | ---------- | ---------- | ------------------------------------ | ------- |
-| fill       | No         | Boolean    | Fill parent height and adjust width. | `false`  |
+| fillParent | No         | Boolean    | Fill parent height and adjust width. | `false` |
 | src        | No         | String     | The image to display.                | `null` |
 
 ## Example
