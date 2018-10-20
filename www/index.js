@@ -45,10 +45,7 @@ const App = () => (
         </Link>
       </NavbarNavigation>
     </Navbar>
-    <Box
-      readingContainer
-      padding={['2.8em', spacing.normal, spacing.normal, spacing.normal]}
-    >
+    <Box readingContainer padding={['2.8em', 0, 0, 0]}>
       <Columns>
         <Column width="15em" fixed>
           <Navigation label="Remiges">
