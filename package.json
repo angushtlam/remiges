@@ -10,8 +10,9 @@
     "build-lib": "webpack --mode production --config ./lib/webpack.config.js",
     "build-www": "webpack --mode production --config ./www/webpack.config.js",
     "clean": "rm -rf dist",
-    "dev": "start-storybook --port 9001 --config-dir ./lib/.storybook",
+    "dev": "webpack --mode production --config ./lib/webpack.config.js --watch",
     "prepublish": "npm run build-lib",
+    "storybook": "start-storybook --port 9001 --config-dir ./lib/.storybook",
     "www": "webpack-serve --config ./www/webpack.config.js --open"
   },
   "devDependencies": {
