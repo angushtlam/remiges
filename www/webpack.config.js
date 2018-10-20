@@ -20,6 +20,17 @@ module.exports = {
         exclude: /node_modules/,
         use: 'css-loader',
       },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+          {
+            loader: 'markdown-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {

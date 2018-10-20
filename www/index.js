@@ -5,6 +5,7 @@ import {
   Column,
   Columns,
   Header,
+  HTMLViewer,
   Link,
   Navbar,
   NavbarBrand,
@@ -14,16 +15,30 @@ import {
   Paragraph,
   Subheader,
   setupGlobalStyles,
-  colors,
   spacing,
 } from 'remiges'
+import BoxDocumentation from '~/components/Box/README.md'
+import ColumnsDocumentation from '~/components/Columns/README.md'
+import HeaderDocumentation from '~/components/Header/README.md'
+import HeroDocumentation from '~/components/Hero/README.md'
+import HTMLViewerDocumentation from '~/components/HTMLViewer/README.md'
+import ImageDocumentation from '~/components/Image/README.md'
+import LinkDocumentation from '~/components/Link/README.md'
+import NavbarDocumentation from '~/components/Navbar/README.md'
+import NavigationDocumentation from '~/components/Navigation/README.md'
+import ParagraphDocumentation from '~/components/Paragraph/README.md'
+import SubheaderDocumentation from '~/components/Subheader/README.md'
 
 setupGlobalStyles()
 
 const App = () => (
   <Box direction="vertical" padding="0">
-    <Navbar background={colors.shadow} fixed>
-      <NavbarBrand>Remiges</NavbarBrand>
+    <Navbar fixed>
+      <NavbarBrand>
+        <Link to="#">
+          <strong>Remiges</strong>
+        </Link>
+      </NavbarBrand>
       <NavbarNavigation>
         <Link to="https://github.com/angusburg/remiges" target="_blank">
           Fork me on GitHub!
@@ -35,13 +50,34 @@ const App = () => (
       padding={['2.8em', spacing.normal, spacing.normal, spacing.normal]}
     >
       <Columns>
-        <Column width="12em">
+        <Column width="15em" fixed>
           <Navigation label="Remiges">
-            <NavigationItem to="#">Introduction</NavigationItem>
+            <NavigationItem to="#introduction">Introduction</NavigationItem>
+          </Navigation>
+          <Navigation label="Components">
+            <NavigationItem to="#components__box">Box</NavigationItem>
+            <NavigationItem to="#components__columns">Columns</NavigationItem>
+            <NavigationItem to="#components__header">Header</NavigationItem>
+            <NavigationItem to="#components__hero">Hero</NavigationItem>
+            <NavigationItem to="#components__htmlviewer">
+              HTMLViewer
+            </NavigationItem>
+            <NavigationItem to="#components__image">Image</NavigationItem>
+            <NavigationItem to="#components__link">Link</NavigationItem>
+            <NavigationItem to="#components__navbar">Navbar</NavigationItem>
+            <NavigationItem to="#components__navigation">
+              Navigation
+            </NavigationItem>
+            <NavigationItem to="#components__paragraph">
+              Paragraph
+            </NavigationItem>
+            <NavigationItem to="#components__subheader">
+              Subheader
+            </NavigationItem>
           </Navigation>
         </Column>
         <Column>
-          <Header>Remiges</Header>
+          <Header id="introduction">Remiges</Header>
           <Subheader>A React UI Component library</Subheader>
           <Paragraph>
             Remiges is a React UI Component library built by{' '}
@@ -59,6 +95,62 @@ const App = () => (
             all of these changes and make it easier to reuse my own stylings
             across my projects.
           </Paragraph>
+          <Header>Components</Header>
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: BoxDocumentation}}
+            id="components__box"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: ColumnsDocumentation}}
+            id="components__columns"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: HeaderDocumentation}}
+            id="components__header"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: HeroDocumentation}}
+            id="components__hero"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: HTMLViewerDocumentation}}
+            id="components__htmlviewer"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: ImageDocumentation}}
+            id="components__image"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: LinkDocumentation}}
+            id="components__link"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: NavbarDocumentation}}
+            id="components__navbar"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: NavigationDocumentation}}
+            id="components__navigation"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: ParagraphDocumentation}}
+            id="components__paragraph"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: SubheaderDocumentation}}
+            id="components__subheader"
+            padding="0"
+          />
         </Column>
       </Columns>
     </Box>
