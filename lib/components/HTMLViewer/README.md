@@ -9,9 +9,12 @@ HTMLViewer is a standalone component, styling (dangerously set) inner HTML eleme
 | children                | No         | React.Node | Children to render.                | `null`  |
 | dangerouslySetInnerHTML | No         | String     | HTML to render                     | `null`  |
 | id                      | No         | String     | Element ID                         | `null`  |
+| useHTMLAsIs             | No         | Boolean    | Prevent injecting HTML             | `false` |
 
 ## Default Behavior
 `dangerouslySetInnerHTML` intentionally does not have an abstraction so you must use the entire `{__html: html}`.
+
+HTMLViewer will inject additional wrapper divisions on HTML passed in `dangerouslySetInnerHTML` by default. Turn it off with the `useHTMLAsIs` prop.
 
 ## Example
 ```javascript
