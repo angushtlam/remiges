@@ -18,9 +18,9 @@ GridLists are implemented using two components.
 | children  | No         | React.Node | Children to render in GridList                               | `null`  |
 
 ## Default Behaviors
-GridList will lay out GridListItems in columns of:
-- Four at 1200px or greater
-- Three between 900px and 1199px
+GridList will lay out, based on the width of the parent, the GridListItems in columns of:
+- Four at 1400px or greater
+- Three between 900px and 1399px
 - Two between 600px and 899px
 - One at 599px or fewer
 
