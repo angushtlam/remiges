@@ -19,6 +19,7 @@ import {
 } from 'remiges'
 import BoxDocumentation from '~/components/Box/README.md'
 import ColumnsDocumentation from '~/components/Columns/README.md'
+import GridListDocumentation from '~/components/GridList/README.md'
 import HeaderDocumentation from '~/components/Header/README.md'
 import HeroDocumentation from '~/components/Hero/README.md'
 import HTMLViewerDocumentation from '~/components/HTMLViewer/README.md'
@@ -54,6 +55,7 @@ const App = () => (
           <Navigation label="Components">
             <NavigationItem to="#components__box">Box</NavigationItem>
             <NavigationItem to="#components__columns">Columns</NavigationItem>
+            <NavigationItem to="#components__gridlist">GridList</NavigationItem>
             <NavigationItem to="#components__header">Header</NavigationItem>
             <NavigationItem to="#components__hero">Hero</NavigationItem>
             <NavigationItem to="#components__htmlviewer">
@@ -101,6 +103,11 @@ const App = () => (
           <HTMLViewer
             dangerouslySetInnerHTML={{__html: ColumnsDocumentation}}
             id="components__columns"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: GridListDocumentation}}
+            id="components__gridlist"
             padding="0"
           />
           <HTMLViewer
