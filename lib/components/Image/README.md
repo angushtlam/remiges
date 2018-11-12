@@ -2,7 +2,7 @@
 Image is a wrapper over the HTML `img` element.
 
 ## Component
-> Image is a Sizable component.
+> Image is a Backgroundable, Displayable, Flexboxable, and Sizable component.
 
 | Prop Name  | Required?  | Type       | Description                          | Default |
 | ---------- | ---------- | ---------- | ------------------------------------ | ------- |
