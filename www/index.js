@@ -2,6 +2,7 @@ import React from 'react'
 import {render} from 'react-dom'
 import {
   Box,
+  Button,
   Column,
   Columns,
   Header,
@@ -15,9 +16,9 @@ import {
   Paragraph,
   Subheader,
   setupGlobalStyles,
-  spacing,
 } from 'remiges'
 import BoxDocumentation from '~/components/Box/README.md'
+import ButtonDocumentation from '~/components/Button/README.md'
 import ColumnsDocumentation from '~/components/Columns/README.md'
 import GridListDocumentation from '~/components/GridList/README.md'
 import HeaderDocumentation from '~/components/Header/README.md'
@@ -54,6 +55,7 @@ const App = () => (
           </Navigation>
           <Navigation label="Components">
             <NavigationItem to="#components__box">Box</NavigationItem>
+            <NavigationItem to="#components__button">Button</NavigationItem>
             <NavigationItem to="#components__columns">Columns</NavigationItem>
             <NavigationItem to="#components__gridlist">GridList</NavigationItem>
             <NavigationItem to="#components__header">Header</NavigationItem>
@@ -98,6 +100,11 @@ const App = () => (
           <HTMLViewer
             dangerouslySetInnerHTML={{__html: BoxDocumentation}}
             id="components__box"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: ButtonDocumentation}}
+            id="components__button"
             padding="0"
           />
           <HTMLViewer
