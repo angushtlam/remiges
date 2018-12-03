@@ -29,7 +29,9 @@ import LinkDocumentation from '~/components/Link/README.md'
 import NavbarDocumentation from '~/components/Navbar/README.md'
 import NavigationDocumentation from '~/components/Navigation/README.md'
 import ParagraphDocumentation from '~/components/Paragraph/README.md'
+import ProgressListDocumentation from '~/components/ProgressList/README.md'
 import SubheaderDocumentation from '~/components/Subheader/README.md'
+import SwitchDocumentation from '~/components/Switch/README.md'
 
 setupGlobalStyles()
 
@@ -72,9 +74,13 @@ const App = () => (
             <NavigationItem to="#components__paragraph">
               Paragraph
             </NavigationItem>
+            <NavigationItem to="#components__progresslist">
+              ProgressList
+            </NavigationItem>
             <NavigationItem to="#components__subheader">
               Subheader
             </NavigationItem>
+            <NavigationItem to="#components__switch">Switch</NavigationItem>
           </Navigation>
         </Column>
         <Column>
@@ -158,8 +164,18 @@ const App = () => (
             padding="0"
           />
           <HTMLViewer
+            dangerouslySetInnerHTML={{__html: ProgressListDocumentation}}
+            id="components__progresslist"
+            padding="0"
+          />
+          <HTMLViewer
             dangerouslySetInnerHTML={{__html: SubheaderDocumentation}}
             id="components__subheader"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: SwitchDocumentation}}
+            id="components__switch"
             padding="0"
           />
         </Column>
