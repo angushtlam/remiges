@@ -1,13 +1,13 @@
 {
   "presets": ["env", "react", "stage-2"],
   "plugins": [
+    "emotion",
     [
       "babel-plugin-root-import",
       {
         "rootPathSuffix": "./lib",
         "rootPathPrefix": "~"
       }
-    ],
-    "emotion"
+    ]
   ]
 }
