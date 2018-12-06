@@ -2,6 +2,7 @@
 Subheader is a text component for prominent text.
 
 ## Component
+> Subheader is a Displayable and Sizable component.
 
 | Prop Name  | Required?  | Type       | Description                         | Default |
 | ---------- | ---------- | ---------- | ----------------------------------- | ------- |

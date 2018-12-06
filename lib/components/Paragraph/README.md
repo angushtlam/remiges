@@ -2,6 +2,7 @@
 Paragraph is a text component for paragraph text.
 
 ## Component
+> Paragraph is a Displayable and Sizable component.
 
 | Prop Name  | Required?  | Type       | Description                         | Default |
 | ---------- | ---------- | ---------- | ----------------------------------- | ------- |
