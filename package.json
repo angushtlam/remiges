@@ -1,6 +1,6 @@
 {
   "name": "remiges",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "dist/lib/index.js",
   "repository": "git@github.com:angushtlam/remiges.git",
   "author": "angus <angushtlam@gmail.com>",
@@ -16,8 +16,6 @@
     "www": "webpack-serve --config ./www/webpack.config.js --open"
   },
   "devDependencies": {
-    "@emotion/core": "^10.0.4",
-    "@emotion/styled": "^10.0.4",
     "@storybook/addon-knobs": "^3.4.10",
     "@storybook/addon-viewport": "^3.4.10",
     "@storybook/addons": "^3.4.10",
@@ -45,9 +43,11 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
+    "emotion": "^9.2.12",
     "@emotion/core": "^10.0.4",
     "@emotion/styled": "^10.0.4",
-    "marked": "^0.5.1"
+    "marked": "^0.5.1",
+    "remiges": "^0.2.3"
   },
   "peerDependencies": {
     "react": "^16.4.2",
