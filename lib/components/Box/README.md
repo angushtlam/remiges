@@ -14,8 +14,6 @@ all cases of `div` elements.
 | verticallyCenter   | No         | Boolean    | Center children vertically         | `false` |
 
 ## Default Behaviors
-All Box components are styled with `display: flex`.
-
 The `direction` prop takes the strings `horizontal` or `vertical`.
 
 ## Example

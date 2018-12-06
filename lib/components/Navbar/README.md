@@ -16,6 +16,7 @@ Navbar are implemented using three components.
 
 ### NavbarBrand
 > Navbar is a Backgroundable and Paddable component.
+
 | Prop Name | Required?  | Type       | Description                                                  | Default |
 | --------- | ---------- | ---------- | ------------------------------------------------------------ | ------- |
 | children  | No         | React.Node | Children components to render in NavbarBrand                 | `null`  |
