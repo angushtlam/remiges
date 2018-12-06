@@ -1,6 +1,6 @@
 {
   "name": "remiges",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "dist/lib/index.js",
   "repository": "git@github.com:angushtlam/remiges.git",
   "author": "angus <angushtlam@gmail.com>",
@@ -43,7 +43,6 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
-    "emotion": "^9.2.12",
     "@emotion/core": "^10.0.4",
     "@emotion/styled": "^10.0.4",
     "marked": "^0.5.1",
