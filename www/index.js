@@ -15,7 +15,7 @@ import {
   NavigationItem,
   Paragraph,
   Subheader,
-  setupGlobalStyles,
+  createGlobalStyles,
 } from 'remiges'
 import BoxDocumentation from '~/components/Box/README.md'
 import ButtonDocumentation from '~/components/Button/README.md'
@@ -33,10 +33,11 @@ import ProgressListDocumentation from '~/components/ProgressList/README.md'
 import SubheaderDocumentation from '~/components/Subheader/README.md'
 import SwitchDocumentation from '~/components/Switch/README.md'
 
-setupGlobalStyles()
+const globals = createGlobalStyles()
 
 const App = () => (
-  <Box direction="vertical" padding="0">
+  <Box>
+    {globals}
     <Navbar fixed>
       <NavbarBrand>
         <Link to="#">
@@ -44,13 +45,13 @@ const App = () => (
         </Link>
       </NavbarBrand>
       <NavbarNavigation>
-        <Link to="https://github.com/angusburg/remiges" target="_blank">
+        <Link to="https://github.com/angushtlam/remiges" target="_blank">
           Fork me on GitHub!
         </Link>
       </NavbarNavigation>
     </Navbar>
     <Box readingContainer padding={['2.8em', 0, 0, 0]}>
-      <Columns>
+      <Columns padding>
         <Column width="15em" fixed>
           <Navigation label="Remiges">
             <NavigationItem to="#introduction">Introduction</NavigationItem>
