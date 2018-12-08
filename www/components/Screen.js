@@ -44,7 +44,7 @@ const Base = ({children}) => (
         </Link>
       </NavbarBrand>
       <NavbarNavigation>
-        <Link to="/remiges/storybook" target="_blank" using={GatsbyLink}>
+        <Link to="/remiges/storybook" target="_blank">
           Storybook
         </Link>
         <Link to="https://github.com/angushtlam/remiges" target="_blank">
