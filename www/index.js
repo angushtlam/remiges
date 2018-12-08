@@ -2,7 +2,6 @@ import React from 'react'
 import {render} from 'react-dom'
 import {
   Box,
-  Button,
   Column,
   Columns,
   Header,
@@ -25,6 +24,7 @@ import HeaderDocumentation from '~/components/Header/README.md'
 import HeroDocumentation from '~/components/Hero/README.md'
 import HTMLViewerDocumentation from '~/components/HTMLViewer/README.md'
 import ImageDocumentation from '~/components/Image/README.md'
+import InputDocumentation from '~/components/Input/README.md'
 import LinkDocumentation from '~/components/Link/README.md'
 import NavbarDocumentation from '~/components/Navbar/README.md'
 import NavigationDocumentation from '~/components/Navigation/README.md'
@@ -67,6 +67,7 @@ const App = () => (
               HTMLViewer
             </NavigationItem>
             <NavigationItem to="#components__image">Image</NavigationItem>
+            <NavigationItem to="#components__input">Input</NavigationItem>
             <NavigationItem to="#components__link">Link</NavigationItem>
             <NavigationItem to="#components__navbar">Navbar</NavigationItem>
             <NavigationItem to="#components__navigation">
@@ -142,6 +143,11 @@ const App = () => (
           <HTMLViewer
             dangerouslySetInnerHTML={{__html: ImageDocumentation}}
             id="components__image"
+            padding="0"
+          />
+          <HTMLViewer
+            dangerouslySetInnerHTML={{__html: InputDocumentation}}
+            id="components__input"
             padding="0"
           />
           <HTMLViewer
