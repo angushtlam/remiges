@@ -1,5 +1,5 @@
 {
-  "presets": ["env", "react", "stage-2"],
+  "presets": ["@babel/env", "@babel/react", "babel-preset-gatsby"],
   "plugins": [
     "emotion",
     [
