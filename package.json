@@ -15,7 +15,7 @@
     "prepublish": "npm run lib:build",
     "storybook:build": "build-storybook --config-dir ./lib/.storybook --output-dir ./dist/www/storybook",
     "storybook:dev": "start-storybook --port 9001 --config-dir ./lib/.storybook",
-    "www:build": "gatsby build && mv public dist/www",
+    "www:build": "gatsby build --prefix-paths && mv public dist/www",
     "www:dev": "gatsby develop"
   },
   "devDependencies": {
