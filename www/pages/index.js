@@ -32,7 +32,7 @@ const IndexPage = () => (
         </Column>
         <Column width="60%">
           <Subheader>Get Started</Subheader>
-          <Button to="/storybook" target="_blank">
+          <Button to="/remiges/storybook" target="_blank">
             Storybook
           </Button>
         </Column>
