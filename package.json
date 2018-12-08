@@ -6,9 +6,10 @@
   "author": "angus <angushtlam@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "npm run clean && npm run build-lib && npm run build-www",
+    "build": "npm run clean && npm run build-lib && npm run build-www && npm run build-storybook",
     "build-lib": "webpack --mode production --config ./lib/webpack.config.js",
     "build-www": "webpack --mode production --config ./www/webpack.config.js",
+    "build-storybook": "build-storybook --config-dir ./lib/.storybook --output-dir ./dist/www/storybook",
     "clean": "rm -rf dist",
     "dev": "webpack --mode production --config ./lib/webpack.config.js --watch",
     "prepublish": "npm run build-lib",
