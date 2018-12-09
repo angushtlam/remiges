@@ -17,7 +17,7 @@ const Components = ({data}) => {
     <Screen noFooter>
       <Box padding={['2.8em', '0', '0', '0']}>
         <Iframe
-          src={`https://angushtlam.github.io/remiges/storybook/?selectedKind=${
+          src={`/remiges/storybook/?selectedKind=${
             component.fields.relativeDirectory
           }&selectedStory=documentation&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs`}
         />
