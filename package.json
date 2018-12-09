@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@storybook/addon-knobs": "^4.0.12",
+    "@storybook/addon-options": "^4.0.12",
     "@storybook/addon-viewport": "^4.0.12",
     "@storybook/addons": "^4.0.12",
     "@storybook/react": "^4.0.12",
