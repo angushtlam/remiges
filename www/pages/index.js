@@ -1,3 +1,4 @@
+import {Link as GatsbyLink, graphql} from 'gatsby'
 import React from 'react'
 import {
   Box,
@@ -32,8 +33,8 @@ const IndexPage = () => (
         </Column>
         <Column width="60%">
           <Subheader>Get Started</Subheader>
-          <Button to="/remiges/storybook" target="_blank">
-            Storybook
+          <Button to="/components" using={GatsbyLink}>
+            Components
           </Button>
         </Column>
       </Columns>

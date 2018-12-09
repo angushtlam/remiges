@@ -19,7 +19,7 @@ import Favicon96 from '../assets/favicon/favicon-96x96.png'
 
 createGlobalStyles()
 
-const Base = ({children}) => (
+const Base = ({children, noFooter}) => (
   <React.Fragment>
     <Helmet
       title="Remiges"
@@ -44,8 +44,8 @@ const Base = ({children}) => (
         </Link>
       </NavbarBrand>
       <NavbarNavigation>
-        <Link to="/remiges/storybook" target="_blank">
-          Storybook
+        <Link to="/components" using={GatsbyLink}>
+          Components
         </Link>
         <Link to="https://github.com/angushtlam/remiges" target="_blank">
           Fork me on GitHub!
@@ -55,20 +55,22 @@ const Base = ({children}) => (
     <Box direction="vertical" minHeight="100vh">
       {children}
     </Box>
-    <Box>
-      <Box flex readingContainer justifyContent="spaceBetween" padding>
-        <Box>
-          <Link to="#">Back to Top</Link>{' '}
-        </Box>
-        <Box>
-          &copy;{' '}
-          <Link target="_blank" to="https://angus.id/">
-            Angus Lam
-          </Link>{' '}
-          {new Date().getFullYear()}
+    {!noFooter && (
+      <Box>
+        <Box flex readingContainer justifyContent="spaceBetween" padding>
+          <Box>
+            <Link to="#">Back to Top</Link>{' '}
+          </Box>
+          <Box>
+            &copy;{' '}
+            <Link target="_blank" to="https://angus.id/">
+              Angus Lam
+            </Link>{' '}
+            {new Date().getFullYear()}
+          </Box>
         </Box>
       </Box>
-    </Box>
+    )}
   </React.Fragment>
 )
 

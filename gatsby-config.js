@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: 'Remiges',
@@ -26,5 +28,21 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `components`,
+        path: `${__dirname}/lib/components`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-copy-images',
+        ],
+      },
+    },
   ],
 }
