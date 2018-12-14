@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link as GatsbyLink, graphql} from 'gatsby'
-import {Box, Header, Link, Paragraph, spacing} from 'remiges'
+import {Box, Header, Link, List, ListItem, Paragraph, spacing} from 'remiges'
 import Screen from '../components/Screen'
 
 const ComponentsPage = ({
@@ -26,15 +26,15 @@ const ComponentsPage = ({
       >
         <Header>Components</Header>
         <Paragraph>These are the components available in Remiges.</Paragraph>
-        <Paragraph>
+        <List>
           {components.map(component => (
-            <div key={component.id}>
+            <ListItem key={component.id}>
               <Link to={`/${component.path}`} using={GatsbyLink}>
                 <strong>{component.title}</strong>
               </Link>{' '}
-            </div>
+            </ListItem>
           ))}
-        </Paragraph>
+        </List>
       </Box>
     </Screen>
   )
