@@ -1,4 +1,4 @@
-import {Link as GatsbyLink, graphql} from 'gatsby'
+import {Link as GatsbyLink} from 'gatsby'
 import React from 'react'
 import {
   Box,
