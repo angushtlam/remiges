@@ -8,7 +8,7 @@ Navbar are implemented using three components.
 * NavbarNavigation - child of a Navigation component, holding Link children components
 
 ### Navbar
-> Navbar is a Backgroundable and Fixedable component.
+> Navbar is a Backgroundable and Positionable component.
 
 | Prop Name   | Required?  | Type       | Description                                                | Default |
 | ----------- | ---------- | ---------- | ---------------------------------------------------------- | ------- |
