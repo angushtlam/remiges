@@ -1,6 +1,6 @@
 {
   "name": "remiges",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "main": "dist/lib/index.js",
   "repository": "git@github.com:angushtlam/remiges.git",
   "author": "angus <angushtlam@gmail.com>",

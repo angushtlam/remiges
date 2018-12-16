@@ -1,10 +1,10 @@
-# Button 
+# Buttons
 Button is a wrapper over the HTML `button` element. 
 
 If the component has a `to` and/or `using` prop, the component will be rendered with an `a` element.
 
 ## Component
-> Button is a Displayable and Sizable component.
+> Buttons are Displayable and Sizable components.
 
 | Prop Name  | Required?  | Type            | Description                          | Default |
 | ---------- | ---------- | --------------- | ------------------------------------ | ------- |
@@ -17,4 +17,5 @@ If the component has a `to` and/or `using` prop, the component will be rendered 
 ## Example
 ```javascript
 <Button to="/">Button</Button>
+<PillButton to="/">PillButton</PillButton>
 ```
