@@ -23,12 +23,12 @@ const IndexPage = () => (
         <Column>
           <Subheader>Why?</Subheader>
           <Paragraph>
-            I prototype on a lot of React-based frontend projects that end up
+            {`I prototype on a lot of React-based frontend projects that end up
             using a lot of the same styling. The worst part is to keep track of
             all the incremental improvements on the styling from project to
             project. So, for my sake, I'm going to create one library to hold
             all of these changes and make it easier to reuse my own stylings
-            across my projects.
+            across my projects.`}
           </Paragraph>
         </Column>
         <Column width="60%">
