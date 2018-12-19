@@ -17,10 +17,11 @@ import Favicon16 from '../assets/favicon/favicon-16x16.png'
 import Favicon32 from '../assets/favicon/favicon-32x32.png'
 import Favicon96 from '../assets/favicon/favicon-96x96.png'
 
-createGlobalStyles()
+const Global = createGlobalStyles()
 
 const Base = ({children, noFooter}) => (
   <React.Fragment>
+    <Global />
     <Helmet
       title="Remiges"
       meta={[
