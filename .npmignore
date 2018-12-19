@@ -1,9 +1,13 @@
-.babelrc
-.prettierrc.yml
-.travis.yml
 .cache
 dist/www
 lib
 public
 www
+.babelrc
+.prettierrc.yml
+.travis.yml
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+gatsby-ssr.js
 yarn.lock
