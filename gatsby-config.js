@@ -5,6 +5,7 @@ module.exports = {
   },
   pathPrefix: `/remiges`,
   plugins: [
+    'gatsby-plugin-emotion',
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {

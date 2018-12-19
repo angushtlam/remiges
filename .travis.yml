@@ -9,6 +9,7 @@ cache:
 
 script:
   - npm run lint:dry-run
+  - npm run hotfix
   - npm run build
 
 deploy:

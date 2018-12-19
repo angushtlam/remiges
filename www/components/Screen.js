@@ -21,7 +21,6 @@ const Global = createGlobalStyles()
 
 const Base = ({children, noFooter}) => (
   <React.Fragment>
-    <Global />
     <Helmet
       title="Remiges"
       meta={[

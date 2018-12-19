@@ -1,11 +1,21 @@
 const path = require('path')
 const {createFilePath} = require(`gatsby-source-filesystem`)
 
-exports.onCreateWebpackConfig = ({actions}) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({actions, getConfig}) => {
+  const config = getConfig()
+
+  actions.replaceWebpackConfig({
+    ...config,
+    output: {
+      ...config.output,
+      globalObject: 'this',
+    },
     resolve: {
+      ...config.resolve,
       alias: {
-        remiges$: path.resolve(__dirname, 'dist', 'lib', 'index.js'),
+        ...config.resolve.alias,
+        lib: path.resolve(__dirname, 'lib'),
+        remiges$: path.resolve(__dirname, 'lib', 'index.js'),
       },
     },
   })
