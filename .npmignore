@@ -1,6 +1,9 @@
 .babelrc
 .prettierrc.yml
 .travis.yml
+.cache
+dist/www
 lib
+public
 www
 yarn.lock
