@@ -1,6 +1,14 @@
 import React from 'react'
 import {Link as GatsbyLink, graphql} from 'gatsby'
-import {Box, Header, Link, List, ListItem, Paragraph, spacing} from 'remiges'
+import {
+  Box,
+  Header,
+  Link,
+  List,
+  ListItem,
+  Paragraph,
+  defaultTheme as theme,
+} from 'remiges'
 import Screen from '../components/Screen'
 
 const ComponentsPage = ({
@@ -22,7 +30,12 @@ const ComponentsPage = ({
       <Box
         horizontallyCenter
         readingContainer
-        padding={['3.6em', spacing.normal, spacing.normal, spacing.normal]}
+        padding={[
+          '3.6em',
+          theme.spacingNormal,
+          theme.spacingNormal,
+          theme.spacingNormal,
+        ]}
       >
         <Header>Components</Header>
         <Paragraph>These are the components available in Remiges.</Paragraph>
