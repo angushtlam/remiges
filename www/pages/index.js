@@ -14,7 +14,7 @@ import Screen from '../components/Screen'
 
 const IndexPage = () => (
   <Screen>
-    <Hero height="30em">
+    <Hero background="white" height="30em">
       <Header>Remiges</Header>
       <Paragraph>React UI Component Kit</Paragraph>
     </Hero>
