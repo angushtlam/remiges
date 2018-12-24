@@ -9,14 +9,15 @@ import {
   Button,
   Paragraph,
   Subheader,
+  defaultTheme as theme,
 } from 'remiges'
 import Screen from '../components/Screen'
 
 const IndexPage = () => (
   <Screen>
-    <Hero background="white" height="30em">
-      <Header>Remiges</Header>
-      <Paragraph>React UI Component Kit</Paragraph>
+    <Hero background={theme.colorAccent} height="25em">
+      <Header color={theme.colorBlank}>Remiges</Header>
+      <Paragraph color={theme.colorBlank}>React UI Component Kit</Paragraph>
     </Hero>
     <Box horizontallyCenter readingContainer>
       <Columns padding>
@@ -33,7 +34,7 @@ const IndexPage = () => (
         </Column>
         <Column width="60%">
           <Subheader>Get Started</Subheader>
-          <Button to="/components" using={GatsbyLink}>
+          <Button to="/components" using={GatsbyLink} pill>
             Components
           </Button>
         </Column>
