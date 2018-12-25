@@ -15,7 +15,11 @@ import Screen from '../components/Screen'
 
 const IndexPage = () => (
   <Screen>
-    <Hero background={theme.colorAccent} height="25em">
+    <Hero
+      background={theme.colorAccent}
+      height="25em"
+      padding={['2.8em', '0', '0', '0']}
+    >
       <Header color={theme.colorBlank}>Remiges</Header>
       <Paragraph color={theme.colorBlank}>React UI Component Kit</Paragraph>
     </Hero>
