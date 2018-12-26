@@ -16,10 +16,12 @@ import Screen from '../components/Screen'
 
 const IndexPage = () => (
   <Screen>
-    <Hero height="25em" padding={['2.8em', '0', '0', '0']}>
-      <Header color={theme.colorBlank}>Remiges</Header>
-      <Paragraph color={theme.colorBlank}>React UI Component Kit</Paragraph>
-    </Hero>
+    <Box padding={['2.8em', '0', '0', '0']}>
+      <Hero height="25em">
+        <Header color={theme.colorBlank}>Remiges</Header>
+        <Paragraph color={theme.colorBlank}>React UI Component Kit</Paragraph>
+      </Hero>
+    </Box>
     <Box horizontallyCenter readingContainer>
       <Columns padding>
         <Column>
