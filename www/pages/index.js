@@ -2,11 +2,12 @@ import {Link as GatsbyLink} from 'gatsby'
 import React from 'react'
 import {
   Box,
+  Button,
   Column,
   Columns,
   Header,
   Hero,
-  Button,
+  Link,
   Paragraph,
   Subheader,
   defaultTheme as theme,
@@ -34,9 +35,24 @@ const IndexPage = () => (
         </Column>
         <Column width="60%">
           <Subheader>Get Started</Subheader>
-          <Button to="/components" using={GatsbyLink} pill>
-            Components
-          </Button>
+
+          <Paragraph>
+            <Button to="/styles" using={GatsbyLink} pill>
+              Style Guide
+            </Button>{' '}
+            View some of the components in action
+          </Paragraph>
+
+          <Paragraph>
+            <Button to="/components" using={GatsbyLink} pill>
+              Components
+            </Button>{' '}
+            View individual components and documentation in a{' '}
+            <Link target="_blank" to="https://storybook.js.org/">
+              Storybook
+            </Link>{' '}
+            instance.
+          </Paragraph>
         </Column>
       </Columns>
     </Box>

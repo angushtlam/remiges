@@ -43,6 +43,9 @@ const Base = ({children, noFooter}) => (
         </Link>
       </NavbarBrand>
       <NavbarNavigation>
+        <Link to="/styles" using={GatsbyLink}>
+          Style Guide
+        </Link>
         <Link to="/components" using={GatsbyLink}>
           Components
         </Link>
