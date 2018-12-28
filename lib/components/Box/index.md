@@ -3,7 +3,7 @@ Box is the basic building block of block elements. This component should replace
 all cases of `div` elements.
 
 ## Component
-> Box is a Backgroundable, Displayable, Flexboxable, Paddable, Positionable, and Sizable component.
+> Box is a Backgroundable, Displayable, Flexboxable, Paddable, Positionable,Sizable, and Textable component.
 
 | Prop Name          | Required?  | Type       | Description                        | Default |
 | ------------------ | ---------- | ---------- | ---------------------------------- | ------- |
