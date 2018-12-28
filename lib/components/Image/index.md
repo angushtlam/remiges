@@ -7,7 +7,8 @@ Image is a wrapper over the HTML `img` element.
 | Prop Name  | Required?  | Type       | Description                          | Default |
 | ---------- | ---------- | ---------- | ------------------------------------ | ------- |
 | fillParent | No         | Boolean    | Fill parent height and adjust width. | `false` |
-| src        | No         | String     | The image to display.                | `null` |
+| horizontallyCenter | No         | Boolean    | Center children horizontally | `false` |
+| src        | No         | String     | The image to display.                | `null`  |
 
 ## Example
 ```javascript
