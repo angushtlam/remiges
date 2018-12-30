@@ -3,7 +3,7 @@ module.exports = {
     title: 'Remiges',
     description: 'Remiges is a React UI component kit for prototyping.',
   },
-  pathPrefix: `/remiges`,
+  pathPrefix: `/`,
   plugins: [
     {
       resolve: `gatsby-plugin-page-creator`,
