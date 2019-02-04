@@ -53,7 +53,7 @@ class StylesPage extends React.Component {
     return (
       <Screen>
         <Box width="100%" padding={['3.6em', '0', '0', '0']}>
-          <Box padding={['0', theme.spacingNormal]}>
+          <Box padding={['0', theme.space]}>
             <Header>This is Remiges</Header>
             <Paragraph>
               A React component UI kit for rapidly prototyping React project
@@ -136,8 +136,10 @@ class StylesPage extends React.Component {
           </Columns>
 
           <Hero height="30em">
-            <Header>Hero</Header>
-            <Paragraph>{`Lorem ipsum dolor amet knausgaard`}</Paragraph>
+            <Header color={theme.color90}>Hero</Header>
+            <Paragraph
+              color={theme.color90}
+            >{`Lorem ipsum dolor amet knausgaard`}</Paragraph>
           </Hero>
           <Box>
             <Columns padding>

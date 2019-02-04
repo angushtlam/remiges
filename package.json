@@ -57,6 +57,7 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
+    "@callstack/react-theme-provider": "^1.0.7",
     "@storybook/addon-knobs": "^4.0.12",
     "@storybook/addon-options": "^4.0.12",
     "@storybook/addon-viewport": "^4.0.12",

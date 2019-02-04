@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import {Link as GatsbyLink} from 'gatsby'
 import {
   Box,
-  GlobalStyling,
+  Global,
   Image,
   Link,
   Navbar,
@@ -19,7 +19,7 @@ import Favicon96 from '../assets/favicon/favicon-96x96.png'
 
 const Base = ({children, noFooter}) => (
   <React.Fragment>
-    <GlobalStyling />
+    <Global />
     <Helmet
       title="Remiges"
       meta={[
@@ -33,7 +33,7 @@ const Base = ({children, noFooter}) => (
       <link rel="icon" type="image/png" sizes="16x16" href={Favicon16} />
       <meta name="theme-color" content="#ffffff" />
     </Helmet>
-    <Navbar background={theme.colorBlank} fixed>
+    <Navbar background={theme.color90} fixed>
       <NavbarBrand>
         <Link height="100%" to="/" using={GatsbyLink}>
           <Box flex alignItems="center" height="100%">

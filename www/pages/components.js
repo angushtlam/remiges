@@ -32,9 +32,9 @@ const ComponentsPage = ({
         readingContainer
         padding={[
           '3.6em',
-          theme.spacingNormal,
-          theme.spacingNormal,
-          theme.spacingNormal,
+          theme.space,
+          theme.space,
+          theme.space,
         ]}
       >
         <Header>Components</Header>

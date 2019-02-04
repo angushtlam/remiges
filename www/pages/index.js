@@ -18,8 +18,8 @@ const IndexPage = () => (
   <Screen>
     <Box padding={['2.8em', '0', '0', '0']}>
       <Hero height="25em">
-        <Header color={theme.colorBlank}>Remiges</Header>
-        <Paragraph color={theme.colorBlank}>React UI Component Kit</Paragraph>
+        <Header color={theme.color90}>Remiges</Header>
+        <Paragraph color={theme.color90}>React UI Component Kit</Paragraph>
       </Hero>
     </Box>
     <Box horizontallyCenter readingContainer>
