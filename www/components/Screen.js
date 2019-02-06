@@ -7,6 +7,7 @@ import {
   Global,
   Image,
   Link,
+  Theme,
   Navbar,
   NavbarBrand,
   NavbarNavigation,
