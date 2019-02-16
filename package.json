@@ -1,12 +1,12 @@
 {
   "name": "remiges",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "main": "dist/lib/index.js",
   "repository": "git@github.com:angushtlam/remiges.git",
   "author": "angus <angushtlam@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "npm run clean && npm run lib:build && npm run www:build && npm run storybook:build",
+    "build": "yarn clean && yarn lib:build && yarn www:build && yarn storybook:build",
     "clean": "rm -rf dist && rm -rf public",
     "format": "prettier --write '**/*.js'",
     "gatsby": "gatsby",
@@ -14,7 +14,8 @@
     "lint:dry-run": "eslint --fix-dry-run ./",
     "lib:build": "webpack --mode production --config ./lib/webpack.config.js",
     "lib:dev": "webpack --mode production --config ./lib/webpack.config.js --watch",
-    "prepublish": "npm run lib:build",
+    "prepublish": "yarn lib:build",
+    "start": "yarn storybook:dev",
     "storybook:build": "build-storybook --config-dir ./lib/.storybook --output-dir ./dist/www/storybook",
     "storybook:dev": "start-storybook --port 9001 --config-dir ./lib/.storybook",
     "www:build": "gatsby build --prefix-paths && mv public dist/www && echo \"remiges.angus.id\" >> dist/www/CNAME",
@@ -57,7 +58,6 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
-    "@callstack/react-theme-provider": "^1.0.7",
     "@storybook/addon-knobs": "^4.0.12",
     "@storybook/addon-options": "^4.0.12",
     "@storybook/addon-viewport": "^4.0.12",

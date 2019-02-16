@@ -8,10 +8,10 @@ cache:
     - 'node_modules'
 
 before_script:
-  - npm run lint:dry-run
+  - yarn lint:dry-run
 
 script:
-  - npm run build
+  - yarn build
 
 deploy:
   provider: pages
