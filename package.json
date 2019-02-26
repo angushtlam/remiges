@@ -18,7 +18,7 @@
     "start": "yarn storybook:dev",
     "storybook:build": "build-storybook --config-dir ./lib/.storybook --output-dir ./dist/www/storybook",
     "storybook:dev": "start-storybook --port 9001 --config-dir ./lib/.storybook",
-    "www:build": "gatsby build --prefix-paths && mv public dist/www && echo \"remiges.angus.id\" >> dist/www/CNAME",
+    "www:build": "gatsby build --prefix-paths && mv public dist/www && echo \"remiges.angus.dev\" >> dist/www/CNAME",
     "www:dev": "gatsby develop"
   },
   "devDependencies": {

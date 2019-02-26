@@ -65,7 +65,7 @@ const Base = ({children, noFooter}) => (
           </Box>
           <Box>
             &copy;{' '}
-            <Link target="_blank" to="https://angus.id/">
+            <Link target="_blank" to="https://angus.dev/">
               Angus Lam
             </Link>{' '}
             {new Date().getFullYear()}
